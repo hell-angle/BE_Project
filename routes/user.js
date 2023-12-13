@@ -36,7 +36,7 @@ const router = express.Router();
  *       "message": "Invalid credentials"
  *     }
  */
-router.post("admin/login", loginAuth);
+router.post("/login", loginAuth);
 /**
  * @api {get} /data Get User Data
  * @apiVersion 1.0.0

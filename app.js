@@ -5,7 +5,7 @@ require("./config/db");
 
 app.use(
   cors({
-    origin: ['https://chatboxproject-hell-angle.vercel.app','http://localhost:8888'],
+    origin: ['https://chatboxproject-hell-angle.vercel.app'],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
@@ -21,7 +21,7 @@ const admin = require("./routes/admin");
 app.use("/admin", admin);
 // Adjusted CORS middleware
 app.use(function (req, res, next) {
-  res.setHeader('Access-Control-Allow-Origin', 'http://localhost:8888'); // Set the allowed origin
+  res.setHeader('Access-Control-Allow-Origin', 'https://chatboxproject-hell-angle.vercel.app'); // Set the allowed origin
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
   res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
   res.setHeader('Access-Control-Allow-Credentials', true);

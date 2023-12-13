@@ -5,7 +5,7 @@ require("./config/db");
 
 app.use(
   cors({
-    origin: ["*"],
+    origin: '*',
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
